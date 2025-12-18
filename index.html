@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboWiz Inventors - Robotics Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Interactive Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Animated Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>RoboWiz Inventors</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#mission" class="nav-link">Mission</a></li>
+                <li class="nav-item"><a href="#current" class="nav-link">Current</a></li>
+                <li class="nav-item"><a href="#future" class="nav-link">Future</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#coaches" class="nav-link">Coaches</a></li>
+                <li class="nav-item"><a href="#signup" class="nav-link">Sign Up</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page-section">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="hero-title reveal-up">RoboWiz Inventors</h1>
+                <p class="hero-subtitle reveal-up" style="animation-delay: 0.2s;">Building Tomorrow's Innovators Today</p>
+                <div class="hero-cta reveal-up" style="animation-delay: 0.4s;">
+                    <a href="#signup" class="btn-primary animated-border">
+                        <span>Register Now!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="mission" class="content-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Our Mission</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="two-column-layout">
+                    <div class="column reveal-left">
+                        <div class="image-placeholder animated-border">
+                            <!-- REPLACE: Add your team photo here -->
+                            <img src="Team1.jpeg" alt="RoboWiz Team">
+                        </div>
+                    </div>
+                    <div class="column reveal-right">
+                        <div class="content-box">
+                            <h3>Empowering Young Minds</h3>
+                            <p>At RoboWiz Inventors, we're passionate about introducing students to the exciting world of robotics and engineering. Our hands-on approach combines creativity, problem-solving, and teamwork to help young innovators develop skills that will last a lifetime.</p>
+                            <p>Through engaging challenges and real-world applications, we inspire the next generation of engineers, programmers, and critical thinkers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Competition Section -->
+        <div id="current" class="content-section bg-alt">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">What We're Doing Now</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="two-column-layout reverse">
+                    <div class="column reveal-left">
+                        <div class="content-box">
+                            <h3><i class="fas fa-trophy"></i> Sumobot Competitions</h3>
+                            <p>We're currently competing in exciting Sumobot challenges where students design, build, and program autonomous robots to compete in head-to-head matches. These competitions teach valuable lessons in:</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> Mechanical design and construction</li>
+                                <li><i class="fas fa-check-circle"></i> Programming and automation</li>
+                                <li><i class="fas fa-check-circle"></i> Strategic thinking and problem-solving</li>
+                                <li><i class="fas fa-check-circle"></i> Team collaboration and sportsmanship</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column reveal-right">
+                        <div class="image-placeholder animated-border">
+                            <!-- REPLACE: Add your Sumobot photo here -->
+                            <img src="SumoBot.jpeg" alt="Sumobot Competition">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Plans Section -->
+        <div id="future" class="content-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Our Vision for the Future</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="two-column-layout">
+                    <div class="column reveal-left">
+                        <div class="image-placeholder animated-border">
+                            <!-- REPLACE: Add FLL or future program photo here -->
+                            <img src="FLL.jpg" alt="Future Programs">
+                        </div>
+                    </div>
+                    <div class="column reveal-right">
+                        <div class="content-box">
+                            <h3><i class="fas fa-rocket"></i> Expanding to FLL and Beyond</h3>
+                            <p>We're excited about our plans to expand into larger programs like FIRST LEGO League (FLL) and other advanced robotics competitions. These programs will provide our students with:</p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-star"></i> More complex engineering challenges</li>
+                                <li><i class="fas fa-star"></i> Research and presentation opportunities</li>
+                                <li><i class="fas fa-star"></i> National and international competition experience</li>
+                                <li><i class="fas fa-star"></i> Advanced programming and design skills</li>
+                            </ul>
+                            <p>As we grow, we're committed to providing world-class robotics education that prepares students for the technology-driven future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Grid Section -->
+        <div id="features" class="content-section bg-alt">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">What Makes Us Special</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card animated-border reveal-up" style="animation-delay: 0.1s;">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Expert Coaching</h4>
+                        <p>Learn from experienced mentors passionate about robotics education</p>
+                    </div>
+                    <div class="feature-card animated-border reveal-up" style="animation-delay: 0.2s;">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Hands-On Learning</h4>
+                        <p>Build real robots and see your code come to life</p>
+                    </div>
+                    <div class="feature-card animated-border reveal-up" style="animation-delay: 0.3s;">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Competition Ready</h4>
+                        <p>Compete in exciting challenges and showcase your skills</p>
+                    </div>
+                    <div class="feature-card animated-border reveal-up" style="animation-delay: 0.4s;">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Supportive Community</h4>
+                        <p>Join a team that celebrates creativity and collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COACHES PAGE -->
+    <section id="coaches" class="page-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Meet Our Coaches</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Dedicated mentors guiding the next generation of innovators</p>
+            </div>
+
+            <div class="coaches-grid">
+                <!-- Coach Card 1 -->
+                <div class="coach-card animated-border reveal-up" style="animation-delay: 0.1s;">
+                    <div class="coach-image-wrapper">
+                        <!-- REPLACE: Add coach photo here -->
+                        <img src="https://via.placeholder.com/400x400/1a1a2e/6c63ff?text=Coach+1" alt="Coach Name" class="coach-image">
+                        <div class="coach-overlay">
+                            <div class="coach-social">
+                                <a href="mailto:Aakash.Ravishankar@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.instagram.com/autpist105/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coach-info">
+                        <h3 class="coach-name">Aakash Ravishankar</h3>
+                        <p class="coach-title">Coach</p>
+                        <p class="coach-bio">Passionate about robotics with 5+ years of experience in engineering education with competitions including VEX Robotics. Specializes in Structural Design and Competition Strategy.</p>
+                    </div>
+                </div>
+
+                <!-- Coach Card 2 -->
+                <div class="coach-card animated-border reveal-up" style="animation-delay: 0.2s;">
+                    <div class="coach-image-wrapper">
+                        <!-- REPLACE: Add coach photo here -->
+                        <img src="AbhinavPic.jpeg" alt="Coach Name" class="coach-image">
+                        <div class="coach-overlay">
+                            <div class="coach-social">
+                                <a href="mailto:abhinavaonnet@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.instagram.com/abhinavalctrn/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coach-info">
+                        <h3 class="coach-name">Abhinav Anand</h3>
+                        <p class="coach-title">Coach</p>
+                        <p class="coach-bio">Passionate about robotics education with 7+ years of experience in FLL, FTC, and Sumobots. Focused on Mechanical Design and Programming</p>
+                    </div>
+                </div>
+
+                <!-- ADD MORE COACHES: Copy a coach-card div above to add more coaches -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGN UP PAGE -->
+    <section id="signup" class="page-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Join RoboWiz Inventors</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Start your robotics journey with us!</p>
+            </div>
+
+            <div class="signup-layout">
+                <!-- Sign Up Information -->
+                <div class="signup-info reveal-left">
+                    <div class="info-card animated-border">
+                        <div class="info-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Program Details</h3>
+
+                        <div class="info-item">
+                            <i class="fas fa-child"></i>
+                            <div>
+                                <strong>Age Group</strong>
+                                <p>Ages 7-12</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Meeting Times</strong>
+                                <p>Saturdays, 2:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <strong>Pricing</strong>
+                                <!-- EDIT: Update pricing information below -->
+                                <p>$75 Monthly Fee</p>
+                                <p class="small-text">Includes all materials. Does not include competition fees.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <!-- EDIT: Update location information below -->
+                                <p>5920 S Miami Blvd STE 205</p>
+                                <p class="small-text">Morrisville, NC 27560</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card animated-border" style="margin-top: 2rem;">
+                        <h3>What to Expect</h3>
+                        <ul class="expectation-list">
+                            <li><i class="fas fa-check"></i> Weekly hands-on robotics sessions</li>
+                            <li><i class="fas fa-check"></i> Learn building and programming skills</li>
+                            <li><i class="fas fa-check"></i> Participate in exciting competitions</li>
+                            <li><i class="fas fa-check"></i> Work in collaborative teams</li>
+                            <li><i class="fas fa-check"></i> Build confidence and problem-solving abilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div class="signup-form-wrapper reveal-right">
+                    <div class="form-card animated-border">
+                        <h3>Registration Form</h3>
+                        <p class="form-description">Fill out the form below to register your student</p>
+
+                        <form id="signupForm" class="signup-form">
+                            <div class="form-group">
+                                <label for="studentName">Student Name *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="parentName">Parent/Guardian Name *</label>
+                                <input type="text" id="parentName" name="parentName" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Student Age *</label>
+                                <input type="number" id="age" name="age" min="7" max="12" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Additional Information (Optional)</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Any questions or special considerations..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit animated-border">
+                                <span>Submit Registration</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="form-message success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Registration Submitted!</h4>
+                            <p>Thank you for your interest. We'll contact you shortly with next steps.</p>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="errorMessage" class="form-message error-message-box">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h4>Submission Failed</h4>
+                            <p>Please try again or contact us directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-robot"></i> RoboWiz Inventors</h4>
+                    <p>Building tomorrow's innovators today through hands-on robotics education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#coaches">Coaches</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <!-- EDIT: Update contact information below -->
+                    <p><i class="fas fa-envelope"></i> robowizinventors@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (919)-900-0024</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoboWiz Inventors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
